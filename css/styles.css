@@ -1,0 +1,191 @@
+<!--
+	Student Name: Yacob Hiben
+	File Name: styles.css
+	Date:10/31/2024
+-->
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light gray background for readability */
+    color: #333; /* Dark text for high contrast */
+}
+
+/* Header styles */
+header {
+    background-color: #007ACC; /* Soft blue for header */
+    color: #fff; /* White text for contrast */
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.title-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 100px; /* Adjust as necessary */
+}
+
+nav {
+    background-color: #005A9C; /* Darker blue for the navigation bar */
+    padding: 10px;
+}
+
+#nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between navigation links */
+    flex-wrap: wrap; /* Wrap links on smaller screens */
+}
+
+nav a {
+    color: #fff; /* White text for links */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #004080; /* Darker blue on hover */
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Justified paragraph styles */
+p {
+    text-align: justify; /* Justify text alignment */
+    margin: 0 0 1em; /* Add bottom margin for spacing */
+}
+
+/* Main content image styles */
+.main-image {
+    display: block;
+    margin: 20px auto; /* Center the image */
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Table styles */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%; /* Width of the table */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Light border for table */
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #007ACC; /* Header background color */
+    color: #fff; /* Light text for header */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e7f3fe; /* Light blue for even rows */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* White for odd rows */
+}
+
+/* Form styles */
+.form-section {
+    background-color: #ffffff; /* White background for form */
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners */
+    max-width: 400px; /* Limit width for form */
+    margin: 20px auto; /* Center the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.form-element {
+    margin: 10px 0; /* Space between form elements */
+}
+
+input, textarea, select {
+    width: 100%; /* Full width for form controls */
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #f9f9f9; /* Light input backgrounds */
+    color: #333; /* Dark text for input */
+    border: 1px solid #ccc; /* Light border color */
+    border-radius: 3px; /* Rounded borders */
+}
+
+input::placeholder, textarea::placeholder {
+    color: #aaa; /* Lighter color for placeholder text */
+}
+
+fieldset {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 3px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Video styles */
+.video-section {
+    text-align: center;
+}
+
+video {
+    max-width: 100%; /* Responsive video */
+    height: auto;
+}
+
+/* Footer styles */
+footer {
+    background-color: #007ACC; /* Soft blue for footer */
+    color: #fff; /* White text for contrast */
+    text-align: center; /* Center the footer content */
+    padding: 10px 0; /* Padding for top and bottom */
+    position: relative; /* Avoid fixed footer */
+    bottom: 0; /* Positioning at the bottom */
+    width: 100%; /* Full width */
+    margin-top: 20px; /* Space above footer */
+    clear: both; /* Ensure it clears any floated elements */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    /* Styles for mobile view */
+    #nav-menu {
+        flex-direction: column; /* Stack links vertically on mobile */
+        gap: 5px; /* Space between stacked links */
+    }
+
+    .form-section {
+        width: 90%; /* Slightly smaller width for mobile */
+    }
+}

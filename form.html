@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+	Student Name: Yacob Hiben
+	File Name: form.html
+	Date:10/31/2024
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Future Technologies - Form</title>
+</head>
+<body>
+<header>
+    <div class="title-logo">
+        <img src="images/logo.AVIF" alt="Future Technologies Logo" class="logo">
+        <h1>Future Technologies</h1>
+    </div>
+    <nav id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="table.html">Table</a>
+        <a href="form.html">Form</a>
+        <a href="video.html">Video</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Contact Us</h2>
+    <div class="form-section">
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="form-element">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Feedback</legend>
+                    <div class="form-element">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <div class="form-element">
+                        <label for="preferences">Preferences:</label>
+                        <select id="preferences" name="preferences">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <div class="form-element">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Subscribe to our newsletter</label>
+                </div>
+                <div class="form-element">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+</main>
+
+<footer>
+    <p>Contact us: <a href="mailto:info@futuretechnologies.com">info@futuretechnologies.com</a></p>
+    <p>&copy; 2024 Future Technologies. All rights reserved.</p>
+</footer>
+</body>
+</html>
